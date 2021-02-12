@@ -1,5 +1,5 @@
 {
-  "name": "generate-ts-hapi-template",
+  "name": "@uphilgood/ts-hapi-template-generator",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
