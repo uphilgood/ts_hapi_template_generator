@@ -1,5 +1,5 @@
 {
-  "name": "project-template-generator",
+  "name": "generate-ts-hapi-template",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,10 +8,10 @@
     "build": "tsc && shx rm -rf dist/templates && shx cp -r src/templates dist"
   },
   "bin": {
-    "generate-template": "./dist/index.js"
+    "generate-ts-hapi-template": "./dist/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Phil Lee",
   "license": "ISC",
   "devDependencies": {
     "@types/ejs": "^3.0.2",

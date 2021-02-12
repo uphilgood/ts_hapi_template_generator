@@ -1,4 +1,4 @@
-# Project Template Generator
+# Typescript Hapi Template Generator
 
 Build your own custom project templates with this project template generator from anywhere on your machine. Comes with a Typescript/ Hapi server
 
