@@ -1,6 +1,15 @@
 # Typescript Hapi Template Generator
 
-After installing run `generate-ts-hapi-template` and select the `typescript-hapi-project` to bootstrap your Typescript/ Hapi server!
+## Quick Start
+    - `npm i @uphilgood/ts-hapi-template-generator -g`
+    - Run `generate-ts-hapi-template` from anywhere 
+    - Select the `typescript-hapi-project` to bootstrap your Typescript/ Hapi server!
+    - Follow prompt to give the project a name
+    - cd into project
+        - run `npm i && npm run start`
+        - Server will be running on `localhost:3000`
+        - Swagger docs at localhost:3000/documentation
+
 
 ## Will include: 
     - Typescript boiler plate for build process in the form of `tsconfig.json` 
@@ -8,4 +17,5 @@ After installing run `generate-ts-hapi-template` and select the `typescript-hapi
     - Implementation of Hapi server and example route to `/` 
     - Joi validation 
     - Hapi Swagger integration to serve API documentation
+
 

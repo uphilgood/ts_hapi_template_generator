@@ -1,6 +1,6 @@
 import * as Joi from "@hapi/joi";
 
-const resultHTTPStatus = {
+const resultHTTPStatus: any = {
   "200": {
     description: "Success",
     schema: Joi.object({
