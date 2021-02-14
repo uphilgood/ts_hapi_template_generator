@@ -1,4 +1,5 @@
 # Typescript Hapi Template Generator
+A boilerplate template for a Typescript/ Hapi server
 
 ## Quick Start
     - `npm i @uphilgood/ts-hapi-template-generator -g`
@@ -11,7 +12,7 @@
         - Swagger docs at localhost:3000/documentation
 
 
-## Will include: 
+## Includes: 
     - Typescript boiler plate for build process in the form of `tsconfig.json` 
     - Useful configurations and script such as hot reloading with `nodemon` and `rimraf` for cleaning and compiling production builds 
     - Implementation of Hapi server and example route to `/` 

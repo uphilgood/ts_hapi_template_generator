@@ -7,8 +7,22 @@ import chalk from 'chalk';
 import * as template from './utils/template';
 import * as shell from 'shelljs';
 
+export interface CliOptions {
+    projectName: string
+    templateName: string
+    templatePath: string
+    tartgetPath: string
+}
+
+export interface Questions {
+    name: string;
+    type: string;
+    message: string;
+    choices?: string[]
+}
+
 const CHOICES = fs.readdirSync(path.join(__dirname, 'templates'));
-const QUESTIONS = [
+const QUESTIONS:  Questions[]= [
 {
     name: 'template',
     type: 'list',
@@ -20,13 +34,6 @@ const QUESTIONS = [
     type: 'input',
     message: 'Please input a new project name:'
 }];
-
-export interface CliOptions {
-    projectName: string
-    templateName: string
-    templatePath: string
-    tartgetPath: string
-}
 
 const CURR_DIR = process.cwd();
 
@@ -57,7 +64,7 @@ inquirer.prompt(QUESTIONS).then(answers => {
     postProcess(options);
 });
 
-function createProject(projectPath: string) {
+function createProject(projectPath: string): boolean {
     if (fs.existsSync(projectPath)) {
         console.log(chalk.red(`Folder ${projectPath} exists. Delete or use another name.`));
         return false;
@@ -80,7 +87,7 @@ function createDirectoryContents(templatePath: string, projectName: string) {
         const stats = fs.statSync(origFilePath);
     
         // skip files that should not be copied
-        if (SKIP_FILES.indexOf(file) > -1) return;
+        if (SKIP_FILES.includes(file)) return;
         
         if (stats.isFile()) {
             // read file content and transform it using template engine
