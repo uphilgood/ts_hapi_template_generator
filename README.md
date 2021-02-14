@@ -7,7 +7,7 @@ A boilerplate template for a Typescript/ Hapi server
     - Select the `typescript-hapi-project` to bootstrap your Typescript/ Hapi server!
     - Follow prompt to give the project a name
     - cd into project
-        - run `npm i && npm run start`
+        - run `npm run start`
         - Server will be running on `localhost:3000`
         - Swagger docs at localhost:3000/documentation
 
