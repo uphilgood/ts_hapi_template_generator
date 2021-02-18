@@ -28,7 +28,7 @@ const resultHTTPStatus: IResultHTTPStatus = {
 export const Routes = [
   {
     method: "GET",
-    path: "/",
+    path: "/hello",
     options: {
       handler: helloWorld,
       description: "Hello World",
