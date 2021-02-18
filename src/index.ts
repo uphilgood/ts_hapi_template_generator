@@ -107,6 +107,7 @@ function createDirectoryContents(templatePath: string, projectName: string) {
 
 function postProcess(options: CliOptions) {
     const isNode = fs.existsSync(path.join(options.templatePath, 'package.json'));
+    // if package.json is found, run npm install
     if (isNode) {
         shell.cd(options.tartgetPath);
         const result = shell.exec('npm install');

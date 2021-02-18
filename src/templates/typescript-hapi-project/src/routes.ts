@@ -1,6 +1,8 @@
 import * as Joi from "@hapi/joi";
+import { helloWorld } from './handlers/helloWorld';
+import { IResultHTTPStatus} from './types/types';
 
-const resultHTTPStatus: any = {
+const resultHTTPStatus: IResultHTTPStatus = {
   "200": {
     description: "Success",
     schema: Joi.object({
@@ -28,7 +30,7 @@ export const Routes = [
     method: "GET",
     path: "/",
     options: {
-      handler: () => ({ data: "hello World!", status: "SUCCESS", errors: {} }),
+      handler: helloWorld,
       description: "Hello World",
       notes: `Returns Hello World`,
       plugins: {
