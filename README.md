@@ -16,8 +16,15 @@
 
 ## Includes:
 
+### Typescript-Hapi
+
     - Typescript boiler plate for build process in the form of `tsconfig.json`
     - Useful configurations and script such as hot reloading with `nodemon` and `rimraf` for cleaning and compiling production builds
     - Implementation of Hapi server and example route to `/`
     - Joi validation
     - Hapi Swagger integration to serve API documentation
+
+### React App
+
+    - Minimal React app setup without all the boiler plate!
+    - Outstated state management
