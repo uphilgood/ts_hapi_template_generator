@@ -1,14 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["es6"],
-    "allowJs": true,
-    "outDir": "build",
-    "rootDir": "src",
+    "baseUrl": "./src",
+    "jsx": "react",
+    "moduleResolution": "Node",
+    "paths": {
+      "~*": ["./*"]
+    },
     "strict": true,
-    "noImplicitAny": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true
-  }
+    "target": "ES2015"
+  },
+  "include": ["src/**/*"]
 }
