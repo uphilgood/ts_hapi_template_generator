@@ -21,6 +21,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Routes = void 0;
 var Joi = __importStar(require("@hapi/joi"));
+var helloWorld_1 = require("./handlers/helloWorld");
 var resultHTTPStatus = {
     "200": {
         description: "Success",
@@ -46,9 +47,9 @@ var resultHTTPStatus = {
 exports.Routes = [
     {
         method: "GET",
-        path: "/",
+        path: "/hello",
         options: {
-            handler: function () { return ({ data: "hello World!", status: "SUCCESS", errors: {} }); },
+            handler: helloWorld_1.helloWorld,
             description: "Hello World",
             notes: "Returns Hello World",
             plugins: {

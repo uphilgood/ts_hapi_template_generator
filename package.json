@@ -1,5 +1,5 @@
 {
-  "name": "@uphilgood/ts-hapi-template-generator",
+  "name": "code-templatr",
   "version": "0.0.3",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "build": "tsc && shx rm -rf dist/templates && shx cp -r src/templates dist"
   },
   "bin": {
-    "generate-ts-hapi-template": "./dist/index.js"
+    "generate-template": "./dist/index.js"
   },
   "keywords": [],
   "author": "Phil Lee",
